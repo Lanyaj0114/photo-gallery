@@ -1,17 +1,54 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title class="ion-header-center">
+      <img alt="relay logo"
+      src="../../assets/Saved Pictures/relaydesk.JPG"/>
+      <nav id="nav-bar">
+        <li><a href="#Home" class="nav-link">Home</a></li>
+        <li><a href="#About" class="nav-link">About</a></li>
+        <li><a href="#Settings" class="nav-link">Settings</a></li>
+       
+      </nav>
+      <ion-searchbar></ion-searchbar>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div>
+  <ion-card class="ion-text-center">
+
+    <img alt="Spot Capture
+    " src="../../assets/Saved Pictures/Saved Pictures/spotcapture.jpg" />
+    <ion-card-header>
+      <ion-card-title>ORD: Terminal 1</ion-card-title>
+      <ion-card-subtitle>Lobby/Gate Kiosk 3</ion-card-subtitle>
+      <ion-button>Submit</ion-button>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <!-- Here's a small text description for the card content. Nothing more, nothing less. -->
+    </ion-card-content>
+  
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <!-- <ion-title size="large">Tab 1</ion-title> -->
     </ion-toolbar>
   </ion-header>
+  <ion-button class="ion-button-center" color="danger" class="circle" fill="solid" shape="round">R</ion-button>
+  <ion-button color="warning"class="circle" fill="solid" shape="round">Y</ion-button>
+  <ion-button color="success"class="circle" fill="solid" shape="round">G</ion-button>
+</ion-card>
+</div>
+  <ion-item fill="outline">
+    <ion-label position="center">Comment Description</ion-label>
+    <ion-input placeholder="Enter text"></ion-input>
+  </ion-item>
+  <ion-button>
+    Chat
+    <ion-icon slot="start" name="chatbubbles-outline"></ion-icon>
+   </ion-button>
+  
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
